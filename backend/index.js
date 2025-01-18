@@ -2,7 +2,7 @@ import  express from'express';
 import cors from 'cors'
 
 const app = express();
-const port = 3000;
+const port = 3001;
 app.use(cors());
 
 // Mock match stats
@@ -29,6 +29,94 @@ const matchStats = {
       },
     },
   },
+  "2": {
+    matchId: "2",
+    date: "04-05-2023",
+    stats: {
+      teamA: {
+        goals: "2",
+        possession: "60%",
+        passes: "100",
+        shots: "10",
+        shotsOnTarget: "6",
+        corners: "4",
+      },
+      teamB: {
+        goals: "1",
+        possession: "40%",
+        passes: "80",
+        shots: "6",
+        shotsOnTarget: "3",
+        corners: "5",
+      },
+    },
+  },
+  "3": {
+    matchId: "3",
+    date: "05-05-2023",
+    stats: {
+      teamA: {
+        goals: "3",
+        possession: "55%",
+        passes: "90",
+        shots: "12",
+        shotsOnTarget: "7",
+        corners: "8",
+      },
+      teamB: {
+        goals: "2",
+        possession: "45%",
+        passes: "85",
+        shots: "10",
+        shotsOnTarget: "5",
+        corners: "6",
+      },
+    },
+  },
+  "4": {
+    matchId: "4",
+    date: "06-05-2023",
+    stats: {
+      teamA: {
+        goals: "0",
+        possession: "48%",
+        passes: "70",
+        shots: "4",
+        shotsOnTarget: "2",
+        corners: "3",
+      },
+      teamB: {
+        goals: "0",
+        possession: "52%",
+        passes: "85",
+        shots: "5",
+        shotsOnTarget: "1",
+        corners: "4",
+      },
+    },
+  },
+  "5": {
+    matchId: "5",
+    date: "07-05-2023",
+    stats: {
+      teamA: {
+        goals: "4",
+        possession: "62%",
+        passes: "120",
+        shots: "15",
+        shotsOnTarget: "9",
+        corners: "7",
+      },
+      teamB: {
+        goals: "3",
+        possession: "38%",
+        passes: "70",
+        shots: "8",
+        shotsOnTarget: "5",
+        corners: "3",
+      },
+    },
+  },
 };
 
 // Define the route to get match stats
@@ -44,5 +132,5 @@ app.get('/getMatchStats', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on=> http://localhost:${port}`);
 });
