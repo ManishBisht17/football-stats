@@ -16,6 +16,7 @@ Follow these instructions to set up and run the project on your local machine.
 ### Prerequisites
 To run this project, ensure you have the following installed:
 
-1. in backend file Run the command => (i) npm i ,(ii) npx nodemon
-2. after this in html file run Live server then you can search the stats by id 
+1. Install all the dependencies Run this command in backend file's terminal => npm i 
+2. in backend file Run the command => npx nodemon
+3. after this in html  file => run Live server then you can search the stats by id 
    
