@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XFF Match Stats</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>XFF Match Stats</title>
 </head>
 <body>
-    <div class="container">
-        <h1>X Football Federation - Match Stats</h1>
-        <input type="text" id="matchId" placeholder="Enter Match ID">
-        <button id="fetchStats">Fetch Stats</button>
-        <div id="statsContainer" style="margin-top: 20px;"></div>
-    </div>
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>X Football Federation - Match Stats</h1>
+    <form id="stats-form">
+      <input type="text" id="match-id" placeholder="Enter Match ID" required />
+      <button type="submit">Fetch Stats</button>
+    </form>
+    <table id="stats-table" hidden>
+      <thead>
+        <tr>
+          <th colspan="3">Date: <span id="match-date"></span></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Team A</th>
+          <th>Team B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Goals</td>
+          <td id="teamA-goals"></td>
+          <td id="teamB-goals"></td>
+        </tr>
+        <tr>
+          <td>Possession</td>
+          <td id="teamA-possession"></td>
+          <td id="teamB-possession"></td>
+        </tr>
+        <tr>
+          <td>Total Passes</td>
+          <td id="teamA-passes"></td>
+          <td id="teamB-passes"></td>
+        </tr>
+        <tr>
+          <td>Shots</td>
+          <td id="teamA-shots"></td>
+          <td id="teamB-shots"></td>
+        </tr>
+        <tr>
+          <td>Shots on Target</td>
+          <td id="teamA-shotsOnTarget"></td>
+          <td id="teamB-shotsOnTarget"></td>
+        </tr>
+        <tr>
+          <td>Corners</td>
+          <td id="teamA-corners"></td>
+          <td id="teamB-corners"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
