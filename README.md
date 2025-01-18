@@ -15,5 +15,7 @@ Follow these instructions to set up and run the project on your local machine.
 
 ### Prerequisites
 To run this project, ensure you have the following installed:
-1. A modern web browser (e.g., Google Chrome, Mozilla Firefox).
-2. A code editor (e.g., Visual Studio Code) if you want to edit the code.
+
+1. in backend file Run the command => (i) npm i ,(ii) npx nodemon
+2. after this in html file run Live server then you can search the stats by id 
+   
