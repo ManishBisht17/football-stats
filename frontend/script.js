@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const matchDate = document.getElementById("match-date");
   
       try {
-        const response = await fetch(`http://localhost:3001/getMatchStats?matchId=${matchId}`);
+        const response = await fetch(`http://localhost:3000/getMatchStats?matchId=${matchId}`);
         if (!response.ok) throw new Error("Match not found!");
         const data = await response.json();
   
