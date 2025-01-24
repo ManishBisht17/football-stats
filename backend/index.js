@@ -95,28 +95,6 @@ const matchStats = {
       },
     },
   },
-  "5": {
-    matchId: "5",
-    date: "07-05-2023",
-    stats: {
-      teamA: {
-        goals: "4",
-        possession: "62%",
-        passes: "120",
-        shots: "15",
-        shotsOnTarget: "9",
-        corners: "7",
-      },
-      teamB: {
-        goals: "3",
-        possession: "38%",
-        passes: "70",
-        shots: "8",
-        shotsOnTarget: "5",
-        corners: "3",
-      },
-    },
-  },
 };
 
 // Define the route to get match stats
