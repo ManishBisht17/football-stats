@@ -1,4 +1,4 @@
- X Football Federation - Match Stats task
+ X Football Federation - Match Stats task Basically focusing only in methods how stats will render
 
 This is a simple web application to fetch and display match statistics for the X Football Federation (XFF). Users can enter a match ID, and the application will display stats such as goals, possession, passes, shots, and more for both teams.
 
